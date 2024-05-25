@@ -4,15 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
+import {NgScrollbarModule} from "ngx-scrollbar";
+import { FormulariotestComponent } from './formulariotest/formulariotest.component';
+import { QuestionsComponent } from './questions/questions.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidemenuComponent
+    SidemenuComponent,
+    FormulariotestComponent,
+    QuestionsComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgScrollbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

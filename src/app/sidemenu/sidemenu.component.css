@@ -5,8 +5,9 @@
   left: -200px; /* Initially hidden */
   z-index: 100;
   width: 200px;
-  background-color: #f8f9fa;
+  background-color: #40686A;
   transition: all 0.3s ease;
+
 }
 .sidebar.show {
   left: 0; /* Slide in when visible */
@@ -17,7 +18,8 @@
   cursor: pointer;
 }
 .sidebar .list-group-item:hover {
-  background-color: #e9ecef;
+
+  background-color: #8F8681;
 }
 
 .nav-flush .nav-link {
@@ -36,7 +38,7 @@
 .btn-toggle:hover,
 .btn-toggle:focus {
   color: rgba(0, 0, 0, .85);
-  background-color: #d2f4ea;
+  background-color: #E1C1A9;
 }
 
 .btn-toggle::before {
@@ -48,8 +50,13 @@
 }
 
 .btn-toggle[aria-expanded="true"] {
-  color: rgba(0, 0, 0, .85);
+  color: #0359AE;
 }
+.btn-toggle[aria-expanded="false"] {
+  color: #0359AE;
+  background-color: #cce5ff;
+}
+
 .btn-toggle[aria-expanded="true"]::before {
   transform: rotate(90deg);
 }
@@ -60,9 +67,20 @@
   margin-top: .125rem;
   margin-left: 1.25rem;
   text-decoration: none;
+  width: 80%;
 }
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
-  background-color: #d2f4ea;
+  background-color: #E1C1A9;
+}
+
+.list-unstyled li{
+  background-color: #EBE5D9;
+}
+
+
+.list-unstyled   button {
+  width: 100%;
+
 }
 
