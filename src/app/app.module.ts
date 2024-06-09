@@ -8,6 +8,8 @@ import {NgScrollbarModule} from "ngx-scrollbar";
 import { FormulariotestComponent } from './formulariotest/formulariotest.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { BannerComponent } from './banner/banner.component';
+import { LogincomponentComponent } from './logincomponent/logincomponent.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { BannerComponent } from './banner/banner.component';
     SidemenuComponent,
     FormulariotestComponent,
     QuestionsComponent,
-    BannerComponent
+    BannerComponent,
+    LogincomponentComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,35 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Your Logo</a>
-  <button class="navbar-toggler" type="button"   (click)="toggleSideMenu()" id="sidebarCollapse">
+    <div class="container-fluid">
+  <!--<a class="navbar-brand" href="#">Your Logo</a>
+ <button class="navbar-toggler" type="button"   (click)="toggleSideMenu()" id="sidebarCollapse">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button>-->
+        <img  style="
+height: 50px" src="./assets/parafondo1.png">
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+
+            </form>
+            <button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="submit"  [routerLink]="['/login']">Login</button>
+        </div>
+
+
+
+    </div>
 </nav>
+
+
 
 <div class="sidebar " [ngClass]="{'show':isSideMenuOpen}">
 
@@ -29,7 +54,7 @@
       </li>
       <li class="mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-          Information
+          Resources
         </button>
         <div class="collapse" id="dashboard-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -45,23 +70,23 @@
         </button>
         <div class="collapse" id="orders-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark rounded">English for kids</a></li>
-            <li><a href="#" class="link-dark rounded">English for adults</a></li>
-            <li><a href="#" class="link-dark rounded">English for Educators</a></li>
-            <li><a href="#" class="link-dark rounded">Business English</a></li>
+            <li><a href="#" class="link-dark rounded">Level 1</a></li>
+            <li><a href="#" class="link-dark rounded">Level 2</a></li>
+            <li><a href="#" class="link-dark rounded">Level 3</a></li>
+            <li><a href="#" class="link-dark rounded">Level 4</a></li>
           </ul>
         </div>
       </li>
       <li class="border-top my-3"></li>
       <li class="mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-          Resources
+          Information
         </button>
         <div class="collapse" id="account-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark rounded">Events</a></li>
-            <li><a href="#" class="link-dark rounded">Poadcasts</a></li>
-            <li><a href="#" class="link-dark rounded">Vocabulary</a></li>
+            <li><a href="#" class="link-dark rounded">Contacts</a></li>
+            <li><a href="#" class="link-dark rounded">Follow us</a></li>
+            <li><a href="#" class="link-dark rounded">News</a></li>
 
           </ul>
         </div>
