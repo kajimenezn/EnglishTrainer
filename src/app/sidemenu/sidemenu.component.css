@@ -1,6 +1,6 @@
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 65px;
   bottom: 0;
   left: -200px; /* Initially hidden */
   z-index: 100;
@@ -89,6 +89,6 @@
 }
 
 .navbar-black{
-  background-color: #001D3C !important;
+  background-color: #2C3036 !important;
 }
 

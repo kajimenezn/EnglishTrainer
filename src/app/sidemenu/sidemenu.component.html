@@ -1,16 +1,17 @@
-
-<nav class="navbar navbar-expand-md navbar-black bg-black fixed-top">
+<nav class="navbar navbar-expand-md navbar-black bg-black ">
 
     <div class="container-fluid">
-  <!--<a class="navbar-brand" href="#">Your Logo</a>
- <button class="navbar-toggler" type="button"   (click)="toggleSideMenu()" id="sidebarCollapse">
-    <span class="navbar-toggler-icon"></span>
-  </button>-->
-        <img  style="
-height: 50px" src="./assets/ETrainer1.png">
+
+        <button  type="button" (click)="toggleSideMenu()" id="sidebarCollapse" title="">
+            <span class="navbar-toggler-icon"> </span>
+
+        </button>
+
+        <img style="height: 50px" src="./assets/ETrainer2.png">
 
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -22,7 +23,8 @@ height: 50px" src="./assets/ETrainer1.png">
                 <button class="btn btn-outline-success" type="submit">Search</button>
 
             </form>
-            <button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="submit"  [routerLink]="['/login']">Login</button>
+            <button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="submit"
+                    [routerLink]="['/nomenu/login']">Login</button>
 
         </div>
 
@@ -31,70 +33,95 @@ height: 50px" src="./assets/ETrainer1.png">
     </div>
 </nav>
 
+<div class="w-100">
 
 
-<div class="sidebar " [ngClass]="{'show':isSideMenuOpen}">
+    <div class="sidebar " [ngClass]="{'show':isSideMenuOpen}">
 
-    <ng-scrollbar>
-  <div class="flex-shrink-0 p-3 " style="width: 200px;">
-    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-      <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-5 fw-semibold">Collapsible</span>
-    </a>
-    <ul class="list-unstyled ps-0">
-      <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-          Home
-        </button>
-        <div class="collapse show" id="home-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark rounded">Who we are</a></li>
-            <li><a href="#" class="link-dark rounded">Mission and Vision</a></li>
-            <li><a href="#" class="link-dark rounded">Objectives</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-          Resources
-        </button>
-        <div class="collapse" id="dashboard-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark rounded">Improve your English</a></li>
-            <li><a [routerLink]="['/formulariotest']">Online test</a></li>
-            <li><a href="#" class="link-dark rounded">Certificates</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-          Courses
-        </button>
-        <div class="collapse" id="orders-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark rounded">Level 1</a></li>
-            <li><a href="#" class="link-dark rounded">Level 2</a></li>
-            <li><a href="#" class="link-dark rounded">Level 3</a></li>
-            <li><a href="#" class="link-dark rounded">Level 4</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="border-top my-3"></li>
-      <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-          Information
-        </button>
-        <div class="collapse" id="account-collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a [routerLink]="['/contactus']" class="link-dark rounded">Contact us</a></li>
-            <li><a [routerLink]="['/followus']" class="link-dark rounded">Follow us</a></li>
-            <li><a href="#" class="link-dark rounded">News</a></li>
+        <ng-scrollbar>
+            <div class="flex-shrink-0 p-3 ">
+                <!-- <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                  <svg class="bi me-2" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                  </svg>
+                  <span class="fs-5 fw-semibold">Collapsible</span>
+                </a> -->
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#home-collapse" aria-expanded="true">
+                            Home
+                        </button>
+                        <div class="collapse show" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">Who we are</a></li>
+                                <li><a [routerLink]="['/tr/mision']">Mission and Vision</a></li>
+                                <li><a [routerLink]="['/tr/objectives']">Objectives</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#dashboard-collapse" aria-expanded="false">
+                            Resources
+                        </button>
+                        <div class="collapse" id="dashboard-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">Improve your English</a></li>
+                                <li><a [routerLink]="['/tr/formulariotest']">Online test</a></li>
+                                <li><a href="#" class="link-dark rounded">Certificates</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#orders-collapse" aria-expanded="false">
+                            Courses
+                        </button>
+                        <div class="collapse" id="orders-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a [routerLink]="['/tr/level1']" class="link-dark rounded">Level 1</a></li>
+                                <li><a [routerLink]="['/tr/level2']" class="link-dark rounded">Level 2</a></li>
+                                <li><a [routerLink]="['/tr/level3']" class="link-dark rounded">Level 3</a></li>
+                                <li><a [routerLink]="['/tr/level4']" class="link-dark rounded">Level 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#account-collapse" aria-expanded="false">
+                            Information
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a [routerLink]="['/tr/contactus']" class="link-dark rounded">Contact us</a></li>
+                                <li><a [routerLink]="['/tr/followus']" class="link-dark rounded">Follow us</a></li>
 
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
+                                <li><a href="#" class="link-dark rounded">News</a></li>
 
-    </ng-scrollbar>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </ng-scrollbar>
+    </div>
+
+
+    <div style="position: fixed; top:65px; left:200px; right: 0px;  bottom: 0px; padding: 1rem; overflow: hidden; transition: all 0.3s ease; "
+         [style.left]="isSideMenuOpen ? '200px': '0px'">
+
+        <ng-scrollbar>
+        <router-outlet>
+
+
+        </router-outlet>
+        </ng-scrollbar>
+    </div>
+
+
+
+
 </div>

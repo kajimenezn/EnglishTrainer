@@ -1,0 +1,9 @@
+.card-body {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 80%, #40686A  100%)  !important;
+    color: black ;
+}
+
+.card-degradado {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 80%, #40686A  100%)  !important;
+    color: black ;
+}
