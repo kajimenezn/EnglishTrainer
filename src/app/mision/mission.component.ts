@@ -8,8 +8,16 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class MissionComponent implements OnInit {
 
-  mission: string = 'Nuestra misión es proporcionar soluciones innovadoras que mejoren la vida de nuestros clientes.';
-  vision: string = 'Nuestra visión es ser líderes en la industria, reconocidos por nuestro compromiso con la calidad y la excelencia.';
+  mission: string = 'Transformar la enseñanza del idioma Inglés en instituciones ' +
+      'fiscales y fiscomisionales mediante el uso creativo y efectivo de herramientas ' +
+      'educativas innovadoras. Proporcionamos programas educativos de calidad que ' +
+      'fomentan la fluidez lingüística y la competencia comunicativa, promoviendo ' +
+      'un aprendizaje colaborativo y centrado en el estudiante.';
+  vision: string = 'Ser líderes reconocidos en la mejora continua de la enseñanza del ' +
+      'idioma Inglés en instituciones fiscales y fiscomisionales. Inspirar y capacitar ' +
+      'a estudiantes y educadores mediante la innovación educativa, preparándolos para ' +
+      'el éxito en un entorno globalizado y multicultural';
+
 
   constructor() { }
 

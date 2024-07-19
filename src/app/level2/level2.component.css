@@ -1,0 +1,26 @@
+.drag-list {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.drag-list div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: move;
+}
+
+.drop-list {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+}
+
+.drop-list div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: move;
+}

@@ -1,1 +1,16 @@
-<p>level2 works!</p>
+<div class="drag-list" (drop)="onDrop2($event)"
+     (dragover)="onDragOver2($event)">
+    <div
+            *ngFor="let item of dragList; let i = index"
+            draggable="true"
+            (dragstart)="onDragStart($event, i)" >
+        {{ item.name }}
+    </div>
+</div>
+
+<div class="drop-list" (drop)="onDrop($event)"
+     (dragover)="onDragOver($event)">
+    <div *ngFor="let item of dropList let i = index" (dragstart)="onDragStart2($event, i)">
+        {{ item.name }}
+    </div>
+</div>
