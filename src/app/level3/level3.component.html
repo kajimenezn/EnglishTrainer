@@ -1,1 +1,23 @@
-<p>level3 works!</p>
+<div class="container mt-4">
+    <h2 class="mb-4">Adjectives with Examples</h2>
+
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let item of colorfulAdjectives">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.adjective }} {{ item.color }}</h5>
+                    <p class="card-text">{{ item.description }}</p>
+                    <hr>
+                    <p class="card-text">Example: {{ item.exampleSentence }}</p>
+                </div>
+                <div [ngStyle]="{ 'background-color': item.color }" class="card-footer text-white text-center">
+                    {{ item.color }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

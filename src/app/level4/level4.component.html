@@ -1,1 +1,15 @@
-<p>level4 works!</p>
+<div class="container">
+    <h2>Adjectives Exercise</h2>
+    <div class="exercise">
+        <!-- Mostrar la frase con el adjetivo desordenado -->
+        <p>{{ sentence }}</p>
+    </div>
+    <!-- Caja de texto para que el usuario escriba el adjetivo correctamente -->
+    <input type="text" [(ngModel)]="userAnswer" placeholder="Enter the adjective">
+    <!-- Botón para verificar la respuesta -->
+    <button (click)="checkAnswer()">Check Answer</button>
+    <!-- Mostrar mensaje de retroalimentación -->
+    <p>{{ feedbackMessage }}</p>
+    <!-- Botón para cargar el siguiente ejercicio -->
+    <button (click)="nextExercise()">Next Exercise</button>
+</div>

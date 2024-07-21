@@ -19,6 +19,7 @@ import { Level4Component } from './level4/level4.component';
 import {MissionComponent} from './mision/mission.component';
 import { ObjectivesComponent } from './objectives/objectives.component';
 import {NgOptimizedImage} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 //import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
@@ -42,12 +43,13 @@ import {NgOptimizedImage} from "@angular/common";
     ObjectivesComponent,
 
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgScrollbarModule,
-        NgOptimizedImage
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgScrollbarModule,
+    NgOptimizedImage,
+    FormsModule
+  ],
   //schemas: [ CUSTOM_ELEMENTS_SCHEMA ], // Add this line
   providers: [],
   bootstrap: [AppComponent]
