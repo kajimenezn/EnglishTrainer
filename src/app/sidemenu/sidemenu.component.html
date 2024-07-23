@@ -23,8 +23,17 @@
                 <button class="btn btn-outline-success" type="submit">Search</button>
 
             </form>
-            <button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="submit"
-                    [routerLink]="['/nomenu/login']">Login</button>
+
+            <ng-container *ngIf="loginService.isLoged(); else newDeb" >
+                <button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="button"
+                     (click)="logout()"    >Logout</button>
+            </ng-container>
+            <ng-template #newDeb>
+                <button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="button"
+                        [routerLink]="['/nomenu/login']">Login</button>
+            </ng-template>
+
+
 
         </div>
 
@@ -73,22 +82,23 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="mb-1">
+
+                    <!--<li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#orders-collapse" aria-expanded="false">
+                                data-bs-target="#orders-collapse" aria-expanded="true">
                             Courses
                         </button>
+
+
                         <div class="collapse" id="orders-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a [routerLink]="['/tr/level1']" class="link-dark rounded">Level 1</a></li>
-                                <li><a [routerLink]="['/tr/level1/sub-level']" class="link-dark rounded">Sub Level</a></li>
                                 <li><a [routerLink]="['/tr/level2']" class="link-dark rounded">Level 2</a></li>
                                 <li><a [routerLink]="['/tr/level3']" class="link-dark rounded">Level 3</a></li>
                                 <li><a [routerLink]="['/tr/level4']" class="link-dark rounded">Level 4</a></li>
                             </ul>
                         </div>
                     </li>
-
 
                     <li class="border-top my-3"></li>
                     <li class="mb-1">
@@ -105,7 +115,81 @@
 
                             </ul>
                         </div>
+                    </li>-->
+
+                    <li class="mb-1"   *ngIf="loginService.isLoged()">
+                        <!-- Botón para Courses -->
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#courses-collapse" aria-expanded="false">
+                            Courses
+                        </button>
+
+                        <!-- Contenido desplegable de Courses -->
+                        <div class="collapse" id="courses-collapse">
+                            <div class="card card-body">
+                                <!-- Botón para Level 1 dentro de Courses con sangría -->
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#l1pronouns-collapse" aria-expanded="false">
+                                    Level 1
+                                </button>
+
+                                <!-- Contenido desplegable de Level 1 -->
+                                <div class="collapse" id="l1pronouns-collapse">
+                                    <!--<div class="card card-body">-->
+                                        <!-- Aquí va el contenido específico de Level 1 -->
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a [routerLink]="['/courses/l1pronouns']" class="link-dark rounded">Pronouns and Verb to be</a></li>
+                                            <li><a [routerLink]="['/courses/level2']" class="link-dark rounded">Level 2</a></li>
+                                            <li><a [routerLink]="['/courses/level3']" class="link-dark rounded">Level 3</a></li>
+                                            <li><a [routerLink]="['/courses/level4']" class="link-dark rounded">Adjectives</a></li>
+                                        </ul>
+<!--                                    </div>-->
+
+                                </div>
+
+                                <!-- Botón para Level 2 dentro de Courses -->
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#level2-collapse" aria-expanded="false">
+                                    Level 2
+                                </button>
+
+                                <!-- Contenido desplegable de Level 2 -->
+                                <div class="collapse" id="level2-collapse">
+                                    <div class="card card-body">
+                                        <p>Contenido del Nivel 2 del curso de inglés.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Botón para Level 3 dentro de Courses -->
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#level3-collapse" aria-expanded="false">
+                                    Level 3
+                                </button>
+
+                                <!-- Contenido desplegable de Level 3 -->
+                                <div class="collapse" id="level3-collapse">
+                                    <div class="card card-body">
+                                        <p>Contenido del Nivel 3 del curso de inglés.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Botón para Level 4 dentro de Courses -->
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#level4-collapse" aria-expanded="false">
+                                    Level 4
+                                </button>
+
+                                <!-- Contenido desplegable de Level 4 -->
+                                <div class="collapse" id="level4-collapse">
+                                    <div class="card card-body">
+                                        <p>Contenido del Nivel 4 del curso de inglés.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
+
+
                 </ul>
             </div>
 

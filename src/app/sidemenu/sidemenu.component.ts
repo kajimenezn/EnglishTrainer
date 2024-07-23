@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {LoginService} from "../_services/login.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-sidemenu',
@@ -8,8 +10,15 @@ import { Component } from '@angular/core';
 export class SidemenuComponent {
   isSideMenuOpen: boolean = true;
 
+  constructor(readonly loginService: LoginService, private router: Router) {
+  }
 
   toggleSideMenu() {
     this.isSideMenuOpen = !this.isSideMenuOpen;
+  }
+
+  logout() {
+    this.loginService.logout();
+    this.router.navigate(['tr','home'])
   }
 }
