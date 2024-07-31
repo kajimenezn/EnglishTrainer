@@ -56,5 +56,15 @@ export class Level4Component {
         }
     }
 
+    predicativeAdjectives = [
+        { sentence: 'The student is smart.', adjective: 'Smart' },
+        { sentence: 'The employee is dedicated.', adjective: 'Dedicated' }
+    ];
+
+    attributiveAdjectives = [
+        { sentence: 'The smart student is taking the exam.', adjective: 'Smart' },
+        { sentence: 'The dedicated employee starts early at work.', adjective: 'Dedicated' }
+    ];
+
 }
 

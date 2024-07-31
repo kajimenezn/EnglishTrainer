@@ -29,3 +29,36 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.highlight-green {
+    background-color: lightgreen;
+    color: black; /* Puedes ajustar el color del texto si es necesario */
+}
+
+.chart-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #A84343;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #A84343;
+}
+
+h2 {
+    text-align: left; /* Alinea el título a la izquierda */
+    margin: 0; /* Elimina márgenes innecesarios */
+}

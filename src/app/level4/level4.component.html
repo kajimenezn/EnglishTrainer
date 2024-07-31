@@ -1,15 +1,46 @@
+<h2>Adjectives</h2>
+<p>Adjectives are words that modify nouns.
+    They can be attributive (occurring before the noun) or predicative (occurring after the noun).
+    <!--  <span class="highlight-green">proud</span>-->
+</p>
 <div class="container">
-    <h2>Adjectives Exercise</h2>
-    <div class="exercise">
-        <!-- Mostrar la frase con el adjetivo desordenado -->
-        <p>{{ sentence }}</p>
+    <div class="chart-container">
+        <table>
+            <thead>
+            <tr>
+                <th>Sentence</th>
+                <th>Type</th>
+                <th>Adjective</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let item of predicativeAdjectives">
+                <td>{{ item.sentence }}</td>
+                <td>Predicative</td>
+                <td>{{ item.adjective }}</td>
+            </tr>
+            <tr *ngFor="let item of attributiveAdjectives">
+                <td>{{ item.sentence }}</td>
+                <td>Attributive</td>
+                <td>{{ item.adjective }}</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-    <!-- Caja de texto para que el usuario escriba el adjetivo correctamente -->
-    <input type="text" [(ngModel)]="userAnswer" placeholder="Enter the adjective">
-    <!-- Botón para verificar la respuesta -->
-    <button (click)="checkAnswer()">Check Answer</button>
-    <!-- Mostrar mensaje de retroalimentación -->
-    <p>{{ feedbackMessage }}</p>
-    <!-- Botón para cargar el siguiente ejercicio -->
-    <button (click)="nextExercise()">Next Exercise</button>
+</div>
+<h3>Exercise</h3>
+<p>Write the correct adjective in the box.<i class="bi bi-arrow-down"></i></p>
+<div class="container">
+        <div class="exercise">
+            <!-- Mostrar la frase con el adjetivo desordenado -->
+            <p>{{ sentence }}</p>
+        </div>
+        <!-- Caja de texto para que el usuario escriba el adjetivo correctamente -->
+        <input type="text" [(ngModel)]="userAnswer" placeholder="Enter the adjective">
+        <!-- Botón para verificar la respuesta -->
+        <button (click)="checkAnswer()">Check Answer</button>
+        <!-- Mostrar mensaje de retroalimentación -->
+        <p>{{ feedbackMessage }}</p>
+        <!-- Botón para cargar el siguiente ejercicio -->
+        <button (click)="nextExercise()">Next Exercise</button>
 </div>
