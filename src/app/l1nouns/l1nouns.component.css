@@ -1,0 +1,63 @@
+.chart-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.chart-section {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.countable {
+    background-color: #eafaf1;
+    border: 2px solid #dddddd;
+}
+
+.uncountable {
+    background-color: #eafaf1;
+    border: 2px solid #dddddd;
+}
+
+h4 {
+    color: #fff;
+    background-color: #1BB343;
+    padding: 8px;
+    margin: 0;
+    border-bottom: 2px solid #27ae60;
+}
+
+.uncountable h4 {
+    background-color: #d53b2a;
+    border-bottom: 2px solid #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #a6a3a3;
+    color: white;
+}
+
+.uncountable th {
+    background-color: #918f8f;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

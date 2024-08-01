@@ -12,17 +12,17 @@ import { HomeComponent } from './home/home.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { FollowusComponent } from './followus/followus.component';
 import {SideNoMenuComponent} from "./sidemenu-nomenu/sidemenu-nomenui.component";
-//import { Level1Component } from './level1/level1.component';
 import { Level2Component } from './level2/level2.component';
 import { Level3Component } from './level3/level3.component';
-import { Level4Component } from './level4/level4.component';
 import {MissionComponent} from './mision/mission.component';
 import { ObjectivesComponent } from './objectives/objectives.component';
 import {NgOptimizedImage} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { L1pronounsComponent } from './l1pronouns/l1pronouns.component';
+import { L1adjectivesComponent } from './l1adjectives/l1adjectives.component';
 import {LoginService} from "./_services/login.service";
 import {provideHttpClient} from "@angular/common/http";
+import { L1nounsComponent } from './l1nouns/l1nouns.component';
 //import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
@@ -40,10 +40,11 @@ import {provideHttpClient} from "@angular/common/http";
     FollowusComponent,
     Level2Component,
     Level3Component,
-    Level4Component,
     MissionComponent,
     ObjectivesComponent,
     L1pronounsComponent,
+    L1adjectivesComponent,
+    L1nounsComponent,
 
   ],
   imports: [

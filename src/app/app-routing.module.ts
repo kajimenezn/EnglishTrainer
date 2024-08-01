@@ -9,10 +9,11 @@ import {SidemenuComponent} from "./sidemenu/sidemenu.component";
 import {SideNoMenuComponent} from "./sidemenu-nomenu/sidemenu-nomenui.component";
 import {Level2Component} from "./level2/level2.component";
 import {Level3Component} from "./level3/level3.component";
-import {Level4Component} from "./level4/level4.component";
 import {MissionComponent} from "./mision/mission.component";
 import {ObjectivesComponent} from "./objectives/objectives.component";
+import {L1adjectivesComponent} from "./l1adjectives/l1adjectives.component";
 import {L1pronounsComponent} from "./l1pronouns/l1pronouns.component";
+import {L1nounsComponent} from "./l1nouns/l1nouns.component";
 import {AuthGuard} from "./_services/auth.guard";
 
 const routesWithMenu: Routes = [
@@ -45,13 +46,16 @@ const coursesMenu:  Routes= [
     path:"l1pronouns", component: L1pronounsComponent
   },
   {
+    path:"l1adjectives", component: L1adjectivesComponent
+  },
+  {
+    path:"l1nouns", component: L1nounsComponent
+  },
+  {
     path:"level2", component: Level2Component
   },
   {
     path:"level3", component: Level3Component
-  },
-  {
-    path:"level4", component: Level4Component
   },
 
 ]

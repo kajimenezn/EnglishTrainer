@@ -39,7 +39,7 @@ button:hover {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #A84343;
+    border: 1px solid #FF5F00;
     border-radius: 8px;
 }
 
@@ -55,7 +55,7 @@ th, td {
 }
 
 th {
-    background-color: #A84343;
+    background-color: #FFA500;
 }
 
 h2 {
