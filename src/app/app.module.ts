@@ -23,6 +23,8 @@ import { L1adjectivesComponent } from './l1adjectives/l1adjectives.component';
 import {LoginService} from "./_services/login.service";
 import {provideHttpClient} from "@angular/common/http";
 import { L1nounsComponent } from './l1nouns/l1nouns.component';
+import { L1demonstrativeComponent } from './l1demonstrative/l1demonstrative.component';
+
 //import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
@@ -45,6 +47,8 @@ import { L1nounsComponent } from './l1nouns/l1nouns.component';
     L1pronounsComponent,
     L1adjectivesComponent,
     L1nounsComponent,
+    L1demonstrativeComponent,
+
 
   ],
   imports: [

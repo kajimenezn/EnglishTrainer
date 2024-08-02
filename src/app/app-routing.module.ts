@@ -15,6 +15,7 @@ import {L1adjectivesComponent} from "./l1adjectives/l1adjectives.component";
 import {L1pronounsComponent} from "./l1pronouns/l1pronouns.component";
 import {L1nounsComponent} from "./l1nouns/l1nouns.component";
 import {AuthGuard} from "./_services/auth.guard";
+import {L1demonstrativeComponent} from "./l1demonstrative/l1demonstrative.component";
 
 const routesWithMenu: Routes = [
   {
@@ -50,6 +51,9 @@ const coursesMenu:  Routes= [
   },
   {
     path:"l1nouns", component: L1nounsComponent
+  },
+  {
+    path:"l1demonstrative", component: L1demonstrativeComponent
   },
   {
     path:"level2", component: Level2Component

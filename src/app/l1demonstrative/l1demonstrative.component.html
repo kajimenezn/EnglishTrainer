@@ -1,0 +1,56 @@
+<h2>Demonstrative Pronouns</h2>
+<p>Use to point someone or something.
+
+
+<div class="chart-container">
+    <table>
+        <thead>
+        <tr>
+            <th>Sentence</th>
+            <th>Form</th>
+            <th>Demonstrative Pronoun</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of singularDemonstrative">
+            <td>{{ item.sentence }}</td>
+            <td>Singular</td>
+            <td>{{ item.pronoun }}</td>
+        </tr>
+        <tr *ngFor="let item of pluralDemonstrative">
+            <td>{{ item.sentence }}</td>
+            <td>Plural</td>
+            <td>{{ item.pronoun }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>Exercise</h3>
+<p>Choose the Correct Demonstrative Pronoun<i class="bi bi-arrow-down"></i></p>
+<div class="container">
+
+    <div *ngFor="let sentence of sentences; let i = index">
+        <p>{{ sentence.replace('__________', '____') }}
+        <select [(ngModel)]="userAnswers[i]" (ngModelChange)="onAnswerChange(i, $event)">
+            <option *ngFor="let pronoun of pronouns" [value]="pronoun">
+                {{ pronoun }}
+            </option>
+        </select></p>
+        <span *ngIf="userAnswers[i]">
+            <span *ngIf="checkAnswer(i); else incorrect">Correct</span>
+            <ng-template #incorrect>Incorrect</ng-template>
+        </span>
+    </div>
+
+    <div class="results">
+        <h3>Your Answers:</h3>
+        <ul>
+            <li *ngFor="let answer of userAnswers; let i = index">
+                {{ sentences[i].replace('__________', answer) }}
+                <span *ngIf="checkAnswer(i); else incorrect"> (Correct)</span>
+                <ng-template #incorrect> (Incorrect)</ng-template>
+            </li>
+        </ul>
+    </div>
+</div>

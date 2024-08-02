@@ -14,7 +14,7 @@ export class L1adjectivesComponent {
     { sentence: 'He is a smart student.', scrambledAdjective: 'smart' },
     { sentence: 'The flowers are beautiful.', scrambledAdjective: 'beautiful' },
     { sentence: 'It was a long journey.', scrambledAdjective: 'long' }
-    // Añade más ejemplos aquí si lo deseas
+
   ];
 
   currentExerciseIndex: number = 0;
@@ -27,7 +27,7 @@ export class L1adjectivesComponent {
     this.loadExercise(this.currentExerciseIndex);
   }
 
-  // Método para cargar un ejercicio específico
+  // Method for the specific exercise
   loadExercise(index: number) {
     this.userAnswer = '';
     this.feedbackMessage = '';
@@ -36,7 +36,7 @@ export class L1adjectivesComponent {
     this.scrambledAdjective = exercise.scrambledAdjective;
   }
 
-  // Método para verificar la respuesta del usuario
+  // Method to verify the answer
   checkAnswer() {
     const correctAdjective = this.exercises[this.currentExerciseIndex].scrambledAdjective;
     if (this.userAnswer.trim().toLowerCase() === correctAdjective) {
@@ -46,7 +46,7 @@ export class L1adjectivesComponent {
     }
   }
 
-  // Método para cargar el siguiente ejercicio
+  // Method for the next exercise
   nextExercise() {
     this.currentExerciseIndex++;
     if (this.currentExerciseIndex < this.exercises.length) {
