@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class L1demonstrativeComponent {
   sentences: string[] = [
-    '__________ is my book.',
-    'I need __________ pencil.'
+    '1. __________ is my book.',
+    '2. I need __________ pencil.'
   ];
 
   pronouns: string[] = ['This', 'that', 'these', 'those'];
