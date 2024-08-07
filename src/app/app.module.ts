@@ -24,6 +24,9 @@ import {LoginService} from "./_services/login.service";
 import {provideHttpClient} from "@angular/common/http";
 import { L1nounsComponent } from './l1nouns/l1nouns.component';
 import { L1demonstrativeComponent } from './l1demonstrative/l1demonstrative.component';
+import { L2presentsimpleComponent } from './l2presentsimple/l2presentsimple.component';
+import { L2pastsimpleComponent } from './l2pastsimple/l2pastsimple.component';
+import { L2futuresimpleComponent } from './l2futuresimple/l2futuresimple.component';
 
 //import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -48,6 +51,9 @@ import { L1demonstrativeComponent } from './l1demonstrative/l1demonstrative.comp
     L1adjectivesComponent,
     L1nounsComponent,
     L1demonstrativeComponent,
+    L2presentsimpleComponent,
+    L2pastsimpleComponent,
+    L2futuresimpleComponent,
 
 
   ],

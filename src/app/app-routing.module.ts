@@ -16,6 +16,9 @@ import {L1pronounsComponent} from "./l1pronouns/l1pronouns.component";
 import {L1nounsComponent} from "./l1nouns/l1nouns.component";
 import {AuthGuard} from "./_services/auth.guard";
 import {L1demonstrativeComponent} from "./l1demonstrative/l1demonstrative.component";
+import {L2presentsimpleComponent} from "./l2presentsimple/l2presentsimple.component";
+import {L2pastsimpleComponent} from "./l2pastsimple/l2pastsimple.component";
+import {L2futuresimpleComponent} from "./l2futuresimple/l2futuresimple.component";
 
 const routesWithMenu: Routes = [
   {
@@ -61,7 +64,15 @@ const coursesMenu:  Routes= [
   {
     path:"level3", component: Level3Component
   },
-
+  {
+    path:"l2presentsimple", component: L2presentsimpleComponent
+  },
+  {
+    path:"l2pastsimple", component: L2pastsimpleComponent
+  },
+  {
+    path:"l2futuresimple", component: L2futuresimpleComponent
+  },
 ]
 
 const routesNoMenu: Routes= [

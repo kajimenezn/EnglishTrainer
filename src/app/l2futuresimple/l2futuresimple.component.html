@@ -1,0 +1,66 @@
+<h2>Future Simple</h2>
+<p>It is used when an action will happen in the future.
+    <!--  <span class="highlight-green">proud</span>-->
+</p>
+<p> Subject = S&nbsp;&nbsp;&nbsp;&nbsp;Complement= C  </p>
+<div class="container">
+    <div class="chart-container">
+        <table>
+            <thead>
+            <tr>
+                <th>Structure</th>
+                <th>Form</th>
+                <th>Example</th>
+
+            </tr>
+            </thead>
+            <tr *ngFor="let item of futuresimplestructure">
+                <td>{{ item.structure }}</td>
+                <td>{{ item.form }}</td>
+                <td>{{ item.example }}</td>
+
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<h3>Exercise<i class="bi bi-arrow-down"></i></h3>
+<p><i>Write the correct form of the verb in the blank. Do not forget to use "will".</i></p>
+
+<div class="exercise-results-container">
+    <div class="exercise">
+        <div *ngFor="let sentence of sentences; let i = index" class="exercise-item">
+            <i><span class="word">{{ words[i] }}</span></i>
+            <div class="sentence">
+                {{ sentence.replace('__________', '____')}}
+            </div>
+
+            <div class="answer">
+                <!-- Input field for user to write their answer -->
+                <input
+                        [(ngModel)]="userAnswers[i]"
+                        (ngModelChange)="onAnswerChange(i, $event)"
+                        placeholder="Type your answer"
+                />
+            </div>
+
+            <span *ngIf="userAnswers[i]">
+                <span *ngIf="checkAnswer(i); else incorrect">Correct</span>
+                <ng-template #incorrect>Incorrect</ng-template>
+            </span>
+        </div>
+    </div>
+
+    <div class="results">
+        <h3>Your Answers:</h3>
+        <ul>
+            <li *ngFor="let answer of userAnswers; let i = index">
+                {{ sentences[i].replace('__________', answer) }}
+                <span *ngIf="checkAnswer(i); else incorrect"> (Correct)</span>
+                <ng-template #incorrect> (Incorrect)</ng-template>
+            </li>
+        </ul>
+    </div>
+</div>
+

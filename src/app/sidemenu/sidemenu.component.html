@@ -129,12 +129,12 @@
                             <div class="card card-body">
                                 <!-- Botón para Level 1 dentro de Courses con sangría -->
                                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#l1pronouns-collapse" aria-expanded="false">
+                                        data-bs-target="#level1-collapse" aria-expanded="false">
                                     Level 1
                                 </button>
 
                                 <!-- Contenido desplegable de Level 1 -->
-                                <div class="collapse" id="l1pronouns-collapse">
+                                <div class="collapse" id="level1-collapse">
                                     <!--<div class="card card-body">-->
                                         <!-- Aquí va el contenido específico de Level 1 -->
                                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -144,10 +144,8 @@
                                             <li><a [routerLink]="['/courses/l1demonstrative']" class="link-dark rounded">Demonstrative</a></li>
                                             <li><a [routerLink]="['/courses/level2']" class="link-dark rounded">Level 2</a></li>
                                             <li><a [routerLink]="['/courses/level3']" class="link-dark rounded">Level 3</a></li>
-
                                         </ul>
 <!--                                    </div>-->
-
                                 </div>
 
                                 <!-- Botón para Level 2 dentro de Courses -->
@@ -158,9 +156,12 @@
 
                                 <!-- Contenido desplegable de Level 2 -->
                                 <div class="collapse" id="level2-collapse">
-                                    <div class="card card-body">
-                                        <p>Contenido del Nivel 2 del curso de inglés.</p>
-                                    </div>
+
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a [routerLink]="['/courses/l2presentsimple']" class="link-dark rounded">Present Simple Tense</a></li>
+                                            <li><a [routerLink]="['/courses/l2pastsimple']" class="link-dark rounded">Past Simple Tense</a></li>
+                                            <li><a [routerLink]="['/courses/l2futuresimple']" class="link-dark rounded">Future Simple Tense</a></li>
+                                        </ul>
                                 </div>
 
                                 <!-- Botón para Level 3 dentro de Courses -->
