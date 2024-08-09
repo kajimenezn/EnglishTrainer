@@ -27,6 +27,9 @@ import { L1demonstrativeComponent } from './l1demonstrative/l1demonstrative.comp
 import { L2presentsimpleComponent } from './l2presentsimple/l2presentsimple.component';
 import { L2pastsimpleComponent } from './l2pastsimple/l2pastsimple.component';
 import { L2futuresimpleComponent } from './l2futuresimple/l2futuresimple.component';
+import { L3presentcontinuousComponent } from './l3presentcontinuous/l3presentcontinuous.component';
+import { L3pastcontinuousComponent } from './l3pastcontinuous/l3pastcontinuous.component';
+import { L3futurecontinuousComponent } from './l3futurecontinuous/l3futurecontinuous.component';
 
 //import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -54,6 +57,9 @@ import { L2futuresimpleComponent } from './l2futuresimple/l2futuresimple.compone
     L2presentsimpleComponent,
     L2pastsimpleComponent,
     L2futuresimpleComponent,
+    L3presentcontinuousComponent,
+    L3pastcontinuousComponent,
+    L3futurecontinuousComponent,
 
 
   ],

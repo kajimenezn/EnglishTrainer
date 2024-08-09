@@ -11,7 +11,7 @@ export class L2futuresimpleComponent {
     { structure: 'S + will + not+ verb + C. ',form:'Negative', example: "I will not take the tickets. / She will not prepare tea for us."},
     { structure: 'Will + subject + verb + c ? ',form:'Question', example: 'Will I take the tickets? / Will she prepare the tea for us?' },
     { structure: 'Yes, + S + will. ',form:'Affirmative Answer', example: 'Yes, I will. / Yes, she will.' },
-    { structure: 'No, + S + will + not.',form:'Negative Answer', example: "Yes, I will not. / No, she will not." },
+    { structure: 'No, + S + will + not.',form:'Negative Answer', example: "No, I will not. / No, she will not." },
   ];
 
   sentences: string[] = [

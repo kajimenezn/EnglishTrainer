@@ -1,0 +1,44 @@
+<h2>Past Continuous</h2>
+<p>It is used when an action was happening in the past and was interrupted by other action.
+    <!--  <span class="highlight-green">proud</span>-->
+</p>
+<p> Subject = S&nbsp;&nbsp;&nbsp;&nbsp;Auxiliar= Aux&nbsp;&nbsp;&nbsp;&nbsp;Verb =V&nbsp;&nbsp;&nbsp;&nbsp;Complement= C
+    &nbsp;&nbsp;&nbsp;&nbsp;Verb to be in the past =  was / were</p>
+<div class="container">
+    <div class="chart-container">
+        <table>
+            <thead>
+            <tr>
+                <th>Structure</th>
+                <th>Form</th>
+                <th>Example</th>
+
+            </tr>
+            </thead>
+            <tr *ngFor="let item of pastcontinuousstructure">
+                <td>{{ item.structure }}</td>
+                <td>{{ item.form }}</td>
+                <td>{{ item.example }}</td>
+
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<div>
+    <h2>Order the sentences<i class="bi bi-arrow-down"></i></h2>
+    <p>Order the words and type the correct sentence. Remember to use the structure.</p>
+    <p><strong>Words:</strong> {{ currentSentence.words.join(' / ') }}</p>
+
+    <input [(ngModel)]="userAnswer" placeholder="Type your answer" />
+    <button (click)="checkAnswer()">Send</button>
+    <button (click)="clearAnswer()">Try again</button>
+
+    <p *ngIf="feedback">{{ feedback }}</p>
+
+    <div>
+        <button (click)="previousSentence()" [disabled]="currentSentenceIndex === 0">Previous</button>
+        <button (click)="nextSentence()" [disabled]="currentSentenceIndex === sentences.length - 1">Next sentence</button>
+    </div>
+</div>

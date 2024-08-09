@@ -11,7 +11,7 @@ export class L2pastsimpleComponent {
     { structure: 'S + Aux (did) + not+ verb(normal form) + C. ',form:'Negative', example: "I didn't make the bed . / He didn't study for the exam."},
     { structure: 'Aux(Did) + subject + verb(normal form) + c ? ',form:'Question', example: 'Did you make the bed? / Did he study for the exam?' },
     { structure: 'Yes, + S + Aux (did). ',form:'Affirmative Answer', example: 'Yes, I did. / Yes, he did.' },
-    { structure: 'No, + S + Aux (did) + not.',form:'Negative Answer', example: "Yes, I didn't. / No, he didn't." },
+    { structure: 'No, + S + Aux (did) + not.',form:'Negative Answer', example: "No, I didn't. / No, he didn't." },
   ];
 
   sentences: string[] = [

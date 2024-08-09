@@ -1,0 +1,136 @@
+.chart-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #FF5F00;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFA500;
+}
+
+
+
+h2 {
+    text-align: left; /* Alinea el título a la izquierda */
+    margin: 0; /* Elimina márgenes innecesarios */
+    color: #2c3e50; /* Dark color for good readability */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 16px;
+    margin: 15px 0; /* Spacing above and below each paragraph */
+    text-align: left; /* Center align the paragraph text */
+    color: #34495e; /* Slightly lighter shade for the text */
+}
+
+/* Styling for the select container */
+.select-wrapper {
+    display: flex;
+    justify-content: center; /* Center the select dropdown horizontally */
+    margin: 10px 0; /* Spacing above and below the select dropdown */
+}
+
+/* Styling for the select dropdown */
+select {
+    padding: 10px 15px; /* Add padding for better readability */
+    font-size: 16px; /* Consistent font size */
+    border: 1px solid #bdc3c7; /* Light border color */
+    border-radius: 4px; /* Rounded corners for the select dropdown */
+    background-color: #fff; /* White background for the dropdown */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the dropdown */
+    color: #2c3e50; /* Text color for better readability */
+}
+
+/* Results section styling */
+.results {
+    background-color: #ffffff; /* White background for results */
+    border: 1px solid #bdc3c7; /* Border for the results section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the results section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header for the results section */
+.results h3 {
+    color: #2980b9; /* Blue color for the header */
+    margin-bottom: 15px; /* Space below the header */
+}
+
+/* Unordered list styling in results */
+.results ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* List item styling */
+.results li {
+    margin: 10px 0; /* Space between list items */
+    padding: 10px; /* Padding inside each list item */
+    background-color: #ecf0f1; /* Light grey background for list items */
+    border-radius: 4px; /* Rounded corners for list items */
+    color: #2c3e50; /* Dark color for text */
+}
+
+.sentence {
+    text-align: left;
+    margin-bottom: 10px;/* Space after each sentence. */
+}
+
+.chart-container {
+    display: flex;
+    margin: 25px;
+    align-items: flex-start; /* Align the size of the sentences in the table */
+    gap: 70px; /* Space between the table and the image*/
+}
+
+
+.image-container img {
+    max-width: 410px; /* Size of the image */
+    height: auto; /* Image proportion*/
+}
+
+.exercise-results-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los dos bloques */
+}
+
+.exercise {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Apilar las oraciones verticalmente */
+}
+
+.exercise-item {
+    margin-bottom: 15px; /* Espacio entre cada oración */
+}
+
+.answer {
+    margin-bottom: 10px; /* Espacio debajo del campo de selección */
+}
+
+.results {
+    flex: 1 1 300px; /* Ancho fijo para la sección de resultados, puedes ajustar según sea necesario */
+}
+
+.highlight-green {
+    background-color: lightgreen;
+    color: black; /* Puedes ajustar el color del texto si es necesario */
+}

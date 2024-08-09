@@ -172,9 +172,13 @@
 
                                 <!-- Contenido desplegable de Level 3 -->
                                 <div class="collapse" id="level3-collapse">
-                                    <div class="card card-body">
-                                        <p>Contenido del Nivel 3 del curso de inglés.</p>
-                                    </div>
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a [routerLink]="['/courses/l3presentcontinuous']" class="link-dark rounded">Present Continuous Tense</a></li>
+                                            <li><a [routerLink]="['/courses/l3pastcontinuous']" class="link-dark rounded">Past Continuous Tense</a></li>
+                                            <li><a [routerLink]="['/courses/l3futurecontinuous']" class="link-dark rounded">Future Continuous Tense</a></li>
+
+                                        </ul>
+
                                 </div>
 
                                 <!-- Botón para Level 4 dentro de Courses -->
