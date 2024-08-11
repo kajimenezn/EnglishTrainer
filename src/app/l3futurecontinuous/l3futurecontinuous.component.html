@@ -2,7 +2,7 @@
 <p>It is used when an action will be happening in the future.
     <!--  <span class="highlight-green">proud</span>-->
 </p>
-<p> Subject = S&nbsp;&nbsp;&nbsp;&nbsp;Aux=Will be / be going to&nbsp;&nbsp;&nbsp;&nbsp;Verb =V&nbsp;&nbsp;&nbsp;&nbsp;Complement= C
+<p> Subject = S&nbsp;&nbsp;&nbsp;&nbsp;Aux=Will be&nbsp;&nbsp;&nbsp;&nbsp;Verb =V&nbsp;&nbsp;&nbsp;&nbsp;Complement= C
     </p>
 <div class="container">
     <div class="chart-container">
@@ -31,7 +31,7 @@
     <p>Order the words and type the correct sentence. Remember to use the structure.</p>
     <p><strong>Words:</strong> {{ currentSentence.words.join(' / ') }}</p>
 
-    <input [(ngModel)]="userAnswer" placeholder="Type your answer" />
+    <input [(ngModel)]="userAnswer" placeholder="Type your answer" class="input-placeholder"/>
     <button (click)="checkAnswer()">Send</button>
     <button (click)="clearAnswer()">Try again</button>
 

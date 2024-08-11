@@ -7,21 +7,18 @@ import { Component } from '@angular/core';
 })
 export class L3futurecontinuousComponent {
   futurecontinuousstructure = [
-    { structure: 'S + will be + V(ing form) + C. ',form:'Affirmative with will', example: 'He will be talking in the workshop.' },
-    { structure: 'S + (is/are) + going to be + V(ing form) + C. ',form:'Affirmative with going to', example: 'He is going to be talking in the workshop.' },
-    { structure: 'S + will not be + V(ing form)  ',form:'Negative with will', example: "He will not be talking in the workshop."},
-    { structure: 'S + (is/are) not +going to be + V(ing form)  ',form:'Negative with going to', example: "He is not going to be talking in the workshop."},
-    { structure: 'Will + subject + V(ing form)+ c + ? ',form:'Question with will', example: 'Will he be talking in the workshop?' },
-    { structure: '(Is/Are) + subject + (going to be)+ V(ing form)+ c + ? ',form:'Question with going to', example: 'Is he going to be talking in the workshop?' },
-    { structure: 'Yes, + S + will. / Yes + S + going to be.',form:'Affirmative Answer', example: 'Yes, he will. / Yes, he is going to be.' },
-    { structure: 'No, + S + will not. / No, + S + (is/are)+ not + going to be',form:'Negative Answer', example: "No, he will not. / No, he is not going to be." },
+    { structure: 'S + will be + V(ing form) + C. ',form:'Affirmative', example: 'He will be talking in the workshop.' },
+    { structure: 'S + will not be + V(ing form)  ',form:'Negative', example: "He will not be talking in the workshop."},
+    { structure: 'Will + subject + V(ing form)+ c + ? ',form:'Question', example: 'Will he be talking in the workshop?' },
+    { structure: 'Yes, + S + will.',form:'Affirmative Answer', example: "Yes, he will." },
+    { structure: 'No, + S + will not.',form:'Negative Answer', example: "No, he will not." },
   ];
 
 //Jumbled sentences
   sentences = [
-    { words: ['not', 'Pol', 'was','his', 'homework', 'doing'], correct: 'Pol was not doing his homework.' },
-    { words: ['was', 'studying', 'when', 'she', 'the', 'last', 'night','he', 'arrived'], correct: 'She was studying the last night when he arrived.' },
-    { words: ['were', 'the', 'students', 'playing', 'soccer', 'the', 'whole', 'afternoon'], correct: 'The students were playing soccer the whole afternoon.' }
+    { words: ['from', 'They', 'Cuba','will be', 'this', 'arriving','Saturday'], correct: 'They will be arriving from Cuba this Saturday.' },
+    { words: ['will be', 'working', 'project', 'She', 'final', 'on','her'], correct: 'She will be working on her final project.' },
+    { words: ['You', 'for', 'will be', 'exposition', 'the','preparing'], correct: 'You will be preparing for the exposition.' }
   ];
 
   currentSentenceIndex = 0; // Index of the actual sentence

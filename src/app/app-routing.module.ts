@@ -7,8 +7,6 @@ import {ContactanosComponent} from "./contactanos/contactanos.component";
 import {FollowusComponent} from "./followus/followus.component";
 import {SidemenuComponent} from "./sidemenu/sidemenu.component";
 import {SideNoMenuComponent} from "./sidemenu-nomenu/sidemenu-nomenui.component";
-import {Level2Component} from "./level2/level2.component";
-import {Level3Component} from "./level3/level3.component";
 import {MissionComponent} from "./mision/mission.component";
 import {ObjectivesComponent} from "./objectives/objectives.component";
 import {L1adjectivesComponent} from "./l1adjectives/l1adjectives.component";
@@ -60,12 +58,6 @@ const coursesMenu:  Routes= [
   },
   {
     path:"l1demonstrative", component: L1demonstrativeComponent
-  },
-  {
-    path:"level2", component: Level2Component
-  },
-  {
-    path:"level3", component: Level3Component
   },
   {
     path:"l2presentsimple", component: L2presentsimpleComponent

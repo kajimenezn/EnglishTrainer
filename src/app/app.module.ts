@@ -12,8 +12,6 @@ import { HomeComponent } from './home/home.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { FollowusComponent } from './followus/followus.component';
 import {SideNoMenuComponent} from "./sidemenu-nomenu/sidemenu-nomenui.component";
-import { Level2Component } from './level2/level2.component';
-import { Level3Component } from './level3/level3.component';
 import {MissionComponent} from './mision/mission.component';
 import { ObjectivesComponent } from './objectives/objectives.component';
 import {NgOptimizedImage} from "@angular/common";
@@ -46,8 +44,6 @@ import { L3futurecontinuousComponent } from './l3futurecontinuous/l3futurecontin
     HomeComponent,
     ContactanosComponent,
     FollowusComponent,
-    Level2Component,
-    Level3Component,
     MissionComponent,
     ObjectivesComponent,
     L1pronounsComponent,
