@@ -28,6 +28,11 @@ import { L2futuresimpleComponent } from './l2futuresimple/l2futuresimple.compone
 import { L3presentcontinuousComponent } from './l3presentcontinuous/l3presentcontinuous.component';
 import { L3pastcontinuousComponent } from './l3pastcontinuous/l3pastcontinuous.component';
 import { L3futurecontinuousComponent } from './l3futurecontinuous/l3futurecontinuous.component';
+import { L4presentperfectComponent } from './l4presentperfect/l4presentperfect.component';
+import { L4pastperfectComponent } from './l4pastperfect/l4pastperfect.component';
+import { ChatComponent } from './chat/chat.component';
+
+
 
 //import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -56,6 +61,9 @@ import { L3futurecontinuousComponent } from './l3futurecontinuous/l3futurecontin
     L3presentcontinuousComponent,
     L3pastcontinuousComponent,
     L3futurecontinuousComponent,
+    L4presentperfectComponent,
+    L4pastperfectComponent,
+    ChatComponent,
 
 
   ],

@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class L3futurecontinuousComponent {
   futurecontinuousstructure = [
     { structure: 'S + will be + V(ing form) + C. ',form:'Affirmative', example: 'He will be talking in the workshop.' },
-    { structure: 'S + will not be + V(ing form)  ',form:'Negative', example: "He will not be talking in the workshop."},
+    { structure: 'S + will not be + V(ing form) + c.  ',form:'Negative', example: "He will not be talking in the workshop."},
     { structure: 'Will + subject + V(ing form)+ c + ? ',form:'Question', example: 'Will he be talking in the workshop?' },
     { structure: 'Yes, + S + will.',form:'Affirmative Answer', example: "Yes, he will." },
-    { structure: 'No, + S + will not.',form:'Negative Answer', example: "No, he will not." },
+    { structure: 'No, + S + will + not.',form:'Negative Answer', example: "No, he will not." },
   ];
 
 //Jumbled sentences

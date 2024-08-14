@@ -20,6 +20,9 @@ import {L2futuresimpleComponent} from "./l2futuresimple/l2futuresimple.component
 import {L3presentcontinuousComponent} from "./l3presentcontinuous/l3presentcontinuous.component";
 import {L3pastcontinuousComponent} from "./l3pastcontinuous/l3pastcontinuous.component";
 import {L3futurecontinuousComponent} from "./l3futurecontinuous/l3futurecontinuous.component";
+import {L4presentperfectComponent} from "./l4presentperfect/l4presentperfect.component";
+import {L4pastperfectComponent} from "./l4pastperfect/l4pastperfect.component";
+import {ChatComponent} from "./chat/chat.component";
 
 const routesWithMenu: Routes = [
   {
@@ -41,8 +44,9 @@ const routesWithMenu: Routes = [
   {
     path:"followus", component: FollowusComponent
   },
-
-
+  {
+    path:"chat", component: ChatComponent
+  },
 
 ];
 
@@ -76,6 +80,12 @@ const coursesMenu:  Routes= [
   },
   {
     path:"l3futurecontinuous", component: L3futurecontinuousComponent
+  },
+  {
+    path:"l4presentperfect", component: L4presentperfectComponent
+  },
+  {
+    path:"l4pastperfect", component: L4pastperfectComponent
   },
 ]
 

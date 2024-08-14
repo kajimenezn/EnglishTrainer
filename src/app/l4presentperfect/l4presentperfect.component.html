@@ -1,8 +1,9 @@
-<h2>Past Simple</h2>
-<p>It is used when an action happened in the past.
+<h2>Present Perfect </h2>
+<p>It is used when an action started in the past and continue in the present.
     <!--  <span class="highlight-green">proud</span>-->
 </p>
-<p> Subject = S&nbsp;&nbsp;&nbsp;&nbsp;Auxiliar= Aux&nbsp;&nbsp;&nbsp;&nbsp;Complement= C  </p>
+<p> Subject = S&nbsp;&nbsp;&nbsp;&nbsp;Aux verb=have&nbsp;&nbsp;&nbsp;&nbsp;Verb =V&nbsp;&nbsp;&nbsp;&nbsp;Complement= C
+</p>
 <div class="container">
     <div class="chart-container">
         <table>
@@ -14,7 +15,7 @@
 
             </tr>
             </thead>
-            <tr *ngFor="let item of pastsimplestructure">
+            <tr *ngFor="let item of presentperfectstructure">
                 <td>{{ item.structure }}</td>
                 <td>{{ item.form }}</td>
                 <td>{{ item.example }}</td>
@@ -26,15 +27,17 @@
 </div>
 
 <h3>Exercise<i class="bi bi-arrow-down"></i></h3>
-<p><i>Write the verb with. Use the auxiliar in negative form.</i></p>
+<p><i>Write only the correct past participle of the verb.
+    Remember to use the aux verb(has /have) first. </i></p>
+<p>Example: have bought</p>
 
 <div class="exercise-results-container">
     <div class="exercise">
         <div *ngFor="let sentence of sentences; let i = index" class="exercise-item">
             <i><span class="word">{{ words[i] }}</span></i>
-             <div class="sentence">
+            <div class="sentence">
                 {{ sentence.replace('__________', '____')}}
-              </div>
+            </div>
 
             <div class="answer">
                 <!-- Input field for user to write their answer -->
@@ -63,4 +66,3 @@
         </ul>
     </div>
 </div>
-

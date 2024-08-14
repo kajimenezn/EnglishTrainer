@@ -1,0 +1,23 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="mb-0">Chat</h4>
+        </div>
+        <div class="card-body chat-container">
+            <div class="messages">
+                <div *ngFor="let message of messages" class="d-flex align-items-start mb-2">
+                    <img [src]="message.imageUrl" class="rounded-circle me-2" alt="{{message.sender}}" width="40" height="40"/>
+                    <div class="alert" [ngClass]="{'alert-primary': message.sender === 'User', 'alert-secondary': message.sender === 'System'}">
+                        <strong>{{message.sender}}:</strong> {{message.text}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="input-group">
+                <input type="text" class="form-control" [(ngModel)]="newMessage" (keydown.enter)="sendMessage()" placeholder="Type a message..."/>
+                <button class="btn btn-primary" (click)="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+</div>

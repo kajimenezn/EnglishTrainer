@@ -188,9 +188,11 @@
 
                                 <!-- Contenido desplegable de Level 4 -->
                                 <div class="collapse" id="level4-collapse">
-                                    <div class="card card-body">
-                                        <p>Contenido del Nivel 4 del curso de inglés.</p>
-                                    </div>
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a [routerLink]="['/courses/l4presentperfect']" class="link-dark rounded">Present Perfect Tense</a></li>
+                                        <li><a [routerLink]="['/courses/l4pastperfect']" class="link-dark rounded">Past Perfect Tense</a></li>
+
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -205,9 +207,7 @@
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a [routerLink]="['/tr/contactus']" class="link-dark rounded">Contact us</a></li>
                                 <li><a [routerLink]="['/tr/followus']" class="link-dark rounded">Follow us</a></li>
-
-                                <li><a href="#" class="link-dark rounded">News</a></li>
-
+                                <li><a [routerLink]="['/tr/chat']" class="link-dark rounded">Chat</a></li>
                             </ul>
                         </div>
                     </li>
