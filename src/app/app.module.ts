@@ -18,7 +18,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { L1pronounsComponent } from './l1pronouns/l1pronouns.component';
 import { L1adjectivesComponent } from './l1adjectives/l1adjectives.component';
-import {LoginService} from "./_services/login.service";
+
 import {provideHttpClient} from "@angular/common/http";
 import { L1nounsComponent } from './l1nouns/l1nouns.component';
 import { L1demonstrativeComponent } from './l1demonstrative/l1demonstrative.component';
@@ -31,10 +31,7 @@ import { L3futurecontinuousComponent } from './l3futurecontinuous/l3futurecontin
 import { L4presentperfectComponent } from './l4presentperfect/l4presentperfect.component';
 import { L4pastperfectComponent } from './l4pastperfect/l4pastperfect.component';
 import { ChatComponent } from './chat/chat.component';
-
-
-
-//import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { UserinformationComponent } from './userinformation/userinformation.component';
 
 
 @NgModule({
@@ -64,7 +61,7 @@ import { ChatComponent } from './chat/chat.component';
     L4presentperfectComponent,
     L4pastperfectComponent,
     ChatComponent,
-
+    UserinformationComponent,
 
   ],
   imports: [

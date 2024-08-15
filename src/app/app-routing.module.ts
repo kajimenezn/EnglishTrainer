@@ -23,6 +23,7 @@ import {L3futurecontinuousComponent} from "./l3futurecontinuous/l3futurecontinuo
 import {L4presentperfectComponent} from "./l4presentperfect/l4presentperfect.component";
 import {L4pastperfectComponent} from "./l4pastperfect/l4pastperfect.component";
 import {ChatComponent} from "./chat/chat.component";
+import {UserinformationComponent} from "./userinformation/userinformation.component";
 
 const routesWithMenu: Routes = [
   {
@@ -46,6 +47,9 @@ const routesWithMenu: Routes = [
   },
   {
     path:"chat", component: ChatComponent
+  },
+  {
+    path:"userinformation", component: UserinformationComponent
   },
 
 ];

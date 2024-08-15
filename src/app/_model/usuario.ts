@@ -5,7 +5,7 @@ export interface DatosUsuario{
     fechaNacimiento:Date;
     telefono:string;
     direccion:string;
-
+    level:string;
 }
 
 export interface RequestLogin{

@@ -1,25 +1,29 @@
 [{
   "usuario": "cajimenez",
   "contrasenia": "ka88",
+
   "datosUsuario": {
     "nombreCompleto":"Catalina Jimenez",
     "nombreUsuario":"cajimenez",
     "email":"cajimenez@etrainer.com",
     "fechaNacimiento":"03/01/1983",
     "telefono":"0998500716",
-    "direccion":"California Alta"
+    "direccion":"California Alta",
+    "level": "1"
   }
 },
   {
     "usuario": "Javier",
     "contrasenia": "ja56",
+
     "datosUsuario": {
       "nombreCompleto":"Javier Pinto",
       "nombreUsuario":"japinto",
       "email":"japinto@etrainer.com",
       "fechaNacimiento":"16/01/1984",
       "telefono":"0994896321",
-      "direccion":"El Inca"
+      "direccion":"El Inca",
+      "level":"2"
     }
   }
 

@@ -25,9 +25,22 @@
             </form>
 
             <ng-container *ngIf="loginService.isLoged(); else newDeb" >
-                <button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="button"
-                     (click)="logout()"    >Logout</button>
+                <!--<button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="button"
+                     (click)="logout()"    >Logout</button>-->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        {{usuario.nombreCompleto}}
+
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li><button class="dropdown-item" type="button" (click)="gotoUserInformation()" >User Information </button></li>
+                        <li><button class="dropdown-item" type="button" (click)="logout()">Logout</button></li>
+                    </ul>
+                </div>
+
             </ng-container>
+
+
             <ng-template #newDeb>
                 <button style="margin-left: 8px" class="btn btn-outline-success btn-login " type="button"
                         [routerLink]="['/nomenu/login']">Login</button>
@@ -134,19 +147,20 @@
                                 </button>
 
                                 <!-- Contenido desplegable de Level 1 -->
-                                <div class="collapse" id="level1-collapse">
+                                <ng-container *ngIf="usuario.level=='1'">
+                                  <div class="collapse" id="level1-collapse">
                                     <!--<div class="card card-body">-->
                                         <!-- Aquí va el contenido específico de Level 1 -->
+
                                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                             <li><a [routerLink]="['/courses/l1pronouns']" class="link-dark rounded">Pronouns and Verb to be</a></li>
                                             <li><a [routerLink]="['/courses/l1adjectives']" class="link-dark rounded">Adjectives</a></li>
                                             <li><a [routerLink]="['/courses/l1nouns']" class="link-dark rounded">Nouns</a></li>
                                             <li><a [routerLink]="['/courses/l1demonstrative']" class="link-dark rounded">Demonstrative</a></li>
-
                                         </ul>
 <!--                                    </div>-->
-                                </div>
-
+                                  </div>
+                                </ng-container>
                                 <!-- Botón para Level 2 dentro de Courses -->
                                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#level2-collapse" aria-expanded="false">
@@ -154,15 +168,15 @@
                                 </button>
 
                                 <!-- Contenido desplegable de Level 2 -->
+                                <ng-container *ngIf="usuario.level=='2'">
                                 <div class="collapse" id="level2-collapse">
-
                                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                             <li><a [routerLink]="['/courses/l2presentsimple']" class="link-dark rounded">Present Simple Tense</a></li>
                                             <li><a [routerLink]="['/courses/l2pastsimple']" class="link-dark rounded">Past Simple Tense</a></li>
                                             <li><a [routerLink]="['/courses/l2futuresimple']" class="link-dark rounded">Future Simple Tense</a></li>
                                         </ul>
                                 </div>
-
+                                </ng-container>
                                 <!-- Botón para Level 3 dentro de Courses -->
                                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#level3-collapse" aria-expanded="false">
@@ -170,15 +184,16 @@
                                 </button>
 
                                 <!-- Contenido desplegable de Level 3 -->
-                                <div class="collapse" id="level3-collapse">
+                                <ng-container *ngIf="usuario.level=='3'">
+                                  <div class="collapse" id="level3-collapse">
+
                                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                             <li><a [routerLink]="['/courses/l3presentcontinuous']" class="link-dark rounded">Present Continuous Tense</a></li>
                                             <li><a [routerLink]="['/courses/l3pastcontinuous']" class="link-dark rounded">Past Continuous Tense</a></li>
                                             <li><a [routerLink]="['/courses/l3futurecontinuous']" class="link-dark rounded">Future Continuous Tense</a></li>
-
                                         </ul>
-
-                                </div>
+                                  </div>
+                                </ng-container>
 
                                 <!-- Botón para Level 4 dentro de Courses -->
                                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
@@ -187,13 +202,15 @@
                                 </button>
 
                                 <!-- Contenido desplegable de Level 4 -->
-                                <div class="collapse" id="level4-collapse">
+                                <ng-container *ngIf="usuario.level=='4'">
+                                  <div class="collapse" id="level4-collapse">
+
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><a [routerLink]="['/courses/l4presentperfect']" class="link-dark rounded">Present Perfect Tense</a></li>
                                         <li><a [routerLink]="['/courses/l4pastperfect']" class="link-dark rounded">Past Perfect Tense</a></li>
-
                                     </ul>
-                                </div>
+                                  </div>
+                                </ng-container>
                             </div>
                         </div>
                     </li>
