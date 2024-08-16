@@ -32,6 +32,7 @@ import { L4presentperfectComponent } from './l4presentperfect/l4presentperfect.c
 import { L4pastperfectComponent } from './l4pastperfect/l4pastperfect.component';
 import { ChatComponent } from './chat/chat.component';
 import { UserinformationComponent } from './userinformation/userinformation.component';
+import { VerbsComponent } from './verbs/verbs.component';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { UserinformationComponent } from './userinformation/userinformation.comp
     L4pastperfectComponent,
     ChatComponent,
     UserinformationComponent,
+    VerbsComponent,
 
   ],
   imports: [

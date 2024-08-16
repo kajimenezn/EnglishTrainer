@@ -1,0 +1,27 @@
+.irregular-verbs-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 15px auto; /* Center the table */
+    font-size: 16px;
+    text-align: left;
+}
+
+.irregular-verbs-table th, .irregular-verbs-table td {
+    border: 1px solid #dddddd;
+    padding: 6px;
+}
+
+.irregular-verbs-table thead th {
+    background-color: #2e6bc9;
+    color: white;
+    font-weight: bold;
+}
+
+.irregular-verbs-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.irregular-verbs-table tbody tr:hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+}

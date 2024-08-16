@@ -24,12 +24,12 @@ import {L4presentperfectComponent} from "./l4presentperfect/l4presentperfect.com
 import {L4pastperfectComponent} from "./l4pastperfect/l4pastperfect.component";
 import {ChatComponent} from "./chat/chat.component";
 import {UserinformationComponent} from "./userinformation/userinformation.component";
+import {VerbsComponent} from "./verbs/verbs.component";
 
 const routesWithMenu: Routes = [
   {
     path:"formulariotest", component: FormulariotestComponent
   },
-
   {
     path:"home", component: HomeComponent
   },
@@ -38,6 +38,9 @@ const routesWithMenu: Routes = [
   },
   {
     path:"objectives", component: ObjectivesComponent
+  },
+  {
+    path:"verbs", component: VerbsComponent
   },
   {
     path:"contactus", component: ContactanosComponent
