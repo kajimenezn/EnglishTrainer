@@ -1,0 +1,73 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.background-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.top-background {
+    background-color: #dce0e3; /* Color de fondo para la mitad superior */
+}
+
+.bottom-background {
+    background-color: #e1e7e4; /* Color de fondo para la mitad inferior */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgb(1, 45, 70); /* Fondo semitransparente para el texto */padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.content1{
+    text-align: justify;
+}
+
+.about-ush1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.about-ush2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-usp {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-usul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.about-usulli {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-us.section {
+    margin-bottom: 2rem;
+}

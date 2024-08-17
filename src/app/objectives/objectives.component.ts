@@ -7,11 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ObjectivesComponent {
   objetivos: string[] = [
-    'Mejorar la experiencia del usuario en nuestro sitio web.',
-    'Incrementar la conversión de visitantes en clientes potenciales.',
-    'Optimizar el rendimiento y la velocidad de carga de la aplicación.',
-    'Implementar prácticas de desarrollo ágiles para mejorar la entrega de proyectos.'
+    'Improve the user experience on our website.',
+    'Increase the conversion of visitors into potential customers.',
+    'Optimize application performance and loading speed.',
+    'Implement agile development practices to improve project delivery.'
       ]
+
+
+
 }
 
 

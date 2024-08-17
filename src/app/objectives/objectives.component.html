@@ -1,7 +1,16 @@
-<div class="card" style="width: 100%; margin-bottom: 20px">
+
+<div class="card" style="width: 100%; margin-bottom: 20px; display: flex;">
     <div class="card-body">
         <h5 class="card-title">Objectives</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">{{objetivos}}</h6>
-        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>*/-->
+
+        <div class="row">
+            <div class="col-12 col-md-6  col-lg-6 mb-2">{{objetivos}}</div>
+            <div class="col-12 col-md-6  col-lg-6">
+                <img class="w-100" [src]="'assets/peoplecorrectinggrammar.jpg'" alt="Objectives image" style="margin-left: auto;">
+                <p class="freepik-class" >Designed by freepik</p>
+
+            </div>
+        </div>
+
     </div>
 </div>

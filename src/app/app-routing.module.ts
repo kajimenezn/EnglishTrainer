@@ -25,6 +25,7 @@ import {L4pastperfectComponent} from "./l4pastperfect/l4pastperfect.component";
 import {ChatComponent} from "./chat/chat.component";
 import {UserinformationComponent} from "./userinformation/userinformation.component";
 import {VerbsComponent} from "./verbs/verbs.component";
+import {AboutusComponent} from "./aboutus/aboutus.component";
 
 const routesWithMenu: Routes = [
   {
@@ -32,6 +33,9 @@ const routesWithMenu: Routes = [
   },
   {
     path:"home", component: HomeComponent
+  },
+  {
+    path:"aboutus", component: AboutusComponent
   },
   {
     path:"mision", component: MissionComponent

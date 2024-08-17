@@ -2,3 +2,17 @@
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 80%, #40686A  100%)  !important;
     color: black ;
 }
+
+.card-degradado {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 80%, #40686A  100%)  !important;
+    color: black ;
+}
+
+.card-img-left {
+    max-width: 30%; /* Ajusta el ancho de la imagen a la derecha */
+    margin-left: auto; /* Empuja la imagen a la derecha */
+}
+
+.freepik-class{
+    font-size: 10px; margin-top: 5px; position: absolute;bottom:-30px; right: 0px
+}
