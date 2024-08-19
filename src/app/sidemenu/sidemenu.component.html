@@ -88,10 +88,12 @@
                             Resources
                         </button>
                         <div class="collapse" id="dashboard-collapse">
+
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">Improve your English</a></li>
+                                <li><a [routerLink]="['/tr/improveenglish']">Improve your English</a></li>
                                 <li><a [routerLink]="['/tr/formulariotest']">Online test</a></li>
                                 <li><a [routerLink]="['/tr/verbs']">List of Verbs</a></li>
+                                <li><a [routerLink]="['/tr/learnseries']">Learn with series</a></li>
 
                             </ul>
                         </div>
@@ -130,6 +132,9 @@
                             </ul>
                         </div>
                     </li>-->
+
+
+
 
                     <li class="mb-1"   *ngIf="loginService.isLoged()">
                         <!-- Botón para Courses -->

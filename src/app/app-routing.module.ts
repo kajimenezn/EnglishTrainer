@@ -26,6 +26,8 @@ import {ChatComponent} from "./chat/chat.component";
 import {UserinformationComponent} from "./userinformation/userinformation.component";
 import {VerbsComponent} from "./verbs/verbs.component";
 import {AboutusComponent} from "./aboutus/aboutus.component";
+import {LearnseriesComponent} from "./learnseries/learnseries.component";
+import {ImproveenglishComponent} from "./improveenglish/improveenglish.component";
 
 const routesWithMenu: Routes = [
   {
@@ -45,6 +47,12 @@ const routesWithMenu: Routes = [
   },
   {
     path:"verbs", component: VerbsComponent
+  },
+  {
+    path:"learnseries", component: LearnseriesComponent
+  },
+  {
+    path:"improveenglish", component: ImproveenglishComponent
   },
   {
     path:"contactus", component: ContactanosComponent

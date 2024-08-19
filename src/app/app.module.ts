@@ -34,6 +34,8 @@ import { ChatComponent } from './chat/chat.component';
 import { UserinformationComponent } from './userinformation/userinformation.component';
 import { VerbsComponent } from './verbs/verbs.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { LearnseriesComponent } from './learnseries/learnseries.component';
+import { ImproveenglishComponent } from './improveenglish/improveenglish.component';
 
 
 @NgModule({
@@ -66,6 +68,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     UserinformationComponent,
     VerbsComponent,
     AboutusComponent,
+    LearnseriesComponent,
+    ImproveenglishComponent,
 
   ],
   imports: [
