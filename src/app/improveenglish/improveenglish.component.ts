@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './improveenglish.component.css'
 })
 export class ImproveenglishComponent {
-
+  videoUrl = 'assets/EnglishTips.mp4';  // url of the video
 }
