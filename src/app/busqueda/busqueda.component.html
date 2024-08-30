@@ -1,1 +1,8 @@
-<p>busqueda works!</p>
+<input class="form-control" type="text" [(ngModel)]="textoBusqueda"  (keyup.enter)="buscar()" >
+
+<div class="list-group mt-2">
+    <a  *ngFor="let res of resultado"  [routerLink]="res.link" class="list-group-item list-group-item-action " aria-current="true">
+        {{res.descripcion}}
+    </a>
+   
+</div>

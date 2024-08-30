@@ -36,6 +36,8 @@ import { VerbsComponent } from './verbs/verbs.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LearnseriesComponent } from './learnseries/learnseries.component';
 import { ImproveenglishComponent } from './improveenglish/improveenglish.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
+
 
 
 @NgModule({
@@ -70,6 +72,8 @@ import { ImproveenglishComponent } from './improveenglish/improveenglish.compone
     AboutusComponent,
     LearnseriesComponent,
     ImproveenglishComponent,
+    BusquedaComponent,
+
 
   ],
   imports: [

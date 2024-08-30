@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {LoginService} from "../_services/login.service";
 import {Router} from "@angular/router";
 import {DatosUsuario} from "../_model/usuario";
+import { SearchService } from '../_services/search.service';
 
 @Component({
   selector: 'app-sidemenu',
@@ -14,7 +15,15 @@ export class SidemenuComponent {
 
   isSideMenuOpen: boolean = true;
 
-  constructor(readonly loginService: LoginService, private router: Router) {
+  textoBusqueda="";
+
+  cargarBusqueda(){
+    console.log("cargar busqeuda");
+    this.busquedaService.bsTextoBusqueda.next(this.textoBusqueda);
+    this.router.navigateByUrl("tr/busqueda");
+  }
+
+  constructor(readonly loginService: LoginService, private router: Router, readonly busquedaService: SearchService) {
     this.usuario=JSON.parse(this.strusuario as string);
   }
 

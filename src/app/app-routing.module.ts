@@ -28,6 +28,9 @@ import {VerbsComponent} from "./verbs/verbs.component";
 import {AboutusComponent} from "./aboutus/aboutus.component";
 import {LearnseriesComponent} from "./learnseries/learnseries.component";
 import {ImproveenglishComponent} from "./improveenglish/improveenglish.component";
+import {BusquedaComponent} from "./busqueda/busqueda.component";
+
+
 
 const routesWithMenu: Routes = [
   {
@@ -37,6 +40,9 @@ const routesWithMenu: Routes = [
     path:"home", component: HomeComponent
   },
   {
+    path:"busqueda", component: BusquedaComponent
+  },
+   {
     path:"aboutus", component: AboutusComponent
   },
   {
