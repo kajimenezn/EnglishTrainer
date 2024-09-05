@@ -40,6 +40,7 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +73,8 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
     AboutusComponent,
     LearnseriesComponent,
     ImproveenglishComponent,
-    BusquedaComponent,
+    BusquedaComponent
+
 
 
   ],

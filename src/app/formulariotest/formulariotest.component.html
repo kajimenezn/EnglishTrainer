@@ -1,9 +1,28 @@
-<ng-container *ngFor="let pregunta of listapreguntas">
+<!--<ng-container *ngFor="let pregunta of listapreguntas">
     <app-questions [pregunta]="pregunta"></app-questions>
 
 </ng-container>
 <div class="w-100 text-end">
     <button type="submit" class="btn btn-primary" style="margin-right: 50px">Enviar</button>
 </div>
+-->
+<h2>Placement test</h2>
+<p>You will have a suggestion about your English Level.</p>
+<form (ngSubmit)="submitTest()" #testForm="ngForm" class="test-form">
+    <div *ngFor="let pregunta of listapreguntas; let i = index" class="question-container">
+        <fieldset class="question-fieldset">
+            <legend class="question-legend">{{pregunta.descripcion}}</legend>
+            <div *ngFor="let opcion of pregunta.opcionesRespuesta" class="option-container">
+                <label class="option-label">
+                    <input type="radio" [name]="'pregunta' + i" [value]="opcion.descripcion" [(ngModel)]="userAnswers[i]" required />
+                    {{opcion.descripcion}}
+                </label>
+            </div>
+        </fieldset>
+    </div>
+    <button type="submit" class="submit-button">Submit</button>
+</form>
 
-
+<div *ngIf="level" class="result-container">
+    <h2>Your Level: {{level}}</h2>
+</div>

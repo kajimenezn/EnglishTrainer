@@ -4,5 +4,6 @@ export interface Pregunta{
     descripcion:string;
     detalle:string;
     opcionesRespuesta:Opcion[];
+    respuestaCorrecta:string;
 
 }
