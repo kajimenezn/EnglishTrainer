@@ -9,7 +9,7 @@
     "fechaNacimiento":"03/01/1983",
     "telefono":"0998500716",
     "direccion":"California Alta",
-    "level": "1"
+    "level": "4"
   }
 },
   {
@@ -23,7 +23,7 @@
       "fechaNacimiento":"16/01/1984",
       "telefono":"0994896321",
       "direccion":"El Inca",
-      "level":"4"
+      "level":"1"
     }
   }
 

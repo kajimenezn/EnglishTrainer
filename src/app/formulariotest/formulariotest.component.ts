@@ -49,6 +49,7 @@ export class FormulariotestComponent {
 }*/
 import { Component } from '@angular/core';
 import { Pregunta } from "../_model/pregunta";
+import Swal from "sweetalert2";
 
 @Component({
     selector: 'app-formulariotest',
@@ -110,11 +111,47 @@ export class FormulariotestComponent {
             return count + (this.userAnswers[index] === pregunta.respuestaCorrecta ? 1 : 0);
         }, 0);
 
+        console.log("Respuestas correctas",correctAnswersCount);
+
+        /*Swal.fire({
+            title: "Good job!",
+            text: "Your level is!",
+            icon: "success"
+        });*/
+
         // Determinar el nivel basado en las respuestas correctas
-        if (correctAnswersCount >= 2) {
-            this.level = 'Nivel 1';
-        } else {
-            this.level = 'Nivel 2'; // Puedes ajustar o agregar otros niveles según sea necesario
+        if (correctAnswersCount >=1 && correctAnswersCount<=3) {
+            /*this.level = 'Nivel 1';*/
+            Swal.fire({
+                title: "Good job!",
+                text: 'Level 1',
+                icon: "success"
+            });
+            console.log('hola');
+        } else if (correctAnswersCount >=4 && correctAnswersCount<=6) {
+            /*this.level = 'Nivel 2'; // Puedes ajustar o agregar otros niveles según sea necesario*/
+            Swal.fire({
+                title: "Good job!",
+                text: 'Level 2',
+                icon: "success"
+            });
+        }
+        else if (correctAnswersCount >=7 && correctAnswersCount<=9) {
+            /*this.level = 'Nivel 2'; // Puedes ajustar o agregar otros niveles según sea necesario*/
+            Swal.fire({
+                title: "Good job!",
+                text: 'Level 3',
+                icon: "success"
+            });
+        }
+
+        else if (correctAnswersCount >=10) {
+            /*this.level = 'Nivel 2'; // Puedes ajustar o agregar otros niveles según sea necesario*/
+            Swal.fire({
+                title: "Good job!",
+                text: 'Level 4',
+                icon: "success"
+            });
         }
 
         // Aquí no mostramos las respuestas correctas, solo el nivel

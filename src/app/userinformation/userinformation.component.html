@@ -4,16 +4,26 @@
             Datos del Usuario
         </div>
         <div class="card-body">
-            <h5 class="card-title">Información Personal</h5>
-            <p class="card-text"><strong>Nombre Completo:</strong> {{ usuario.nombreCompleto }}</p>
-            <p class="card-text"><strong>Nombre de Usuario:</strong> {{ usuario.nombreUsuario }}</p>
-            <p class="card-text"><strong>Correo Electrónico:</strong> {{ usuario.email }}</p>
-            <p class="card-text"><strong>Fecha de Nacimiento:</strong> {{ usuario.fechaNacimiento }}</p>
-            <p class="card-text"><strong>Teléfono:</strong> {{ usuario.telefono }}</p>
-            <p class="card-text"><strong>Dirección:</strong> {{ usuario.direccion }}</p>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h5 class="card-title">Información Personal</h5>
+                    <p class="card-text"><strong>Nombre Completo:</strong> {{ usuario.nombreCompleto }}</p>
+                    <p class="card-text"><strong>Nombre de Usuario:</strong> {{ usuario.nombreUsuario }}</p>
+                    <p class="card-text"><strong>Correo Electrónico:</strong> {{ usuario.email }}</p>
+                    <p class="card-text"><strong>Fecha de Nacimiento:</strong> {{ usuario.fechaNacimiento }}</p>
+                    <p class="card-text"><strong>Teléfono:</strong> {{ usuario.telefono }}</p>
+                    <p class="card-text"><strong>Dirección:</strong> {{ usuario.direccion }}</p>
 
 
-            <p class="card-text"><strong>Nivel:</strong> {{ usuario.level }}</p>
+                    <p class="card-text"><strong>Nivel:</strong> {{ usuario.level }}</p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div echarts [options]="chartOption" class="demo-chart"></div>
+                </div>
+            </div>
         </div>
+
     </div>
+
 </div>
+

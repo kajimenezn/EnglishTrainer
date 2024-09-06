@@ -37,6 +37,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { LearnseriesComponent } from './learnseries/learnseries.component';
 import { ImproveenglishComponent } from './improveenglish/improveenglish.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
+import {SweetAlert2Module} from "@sweetalert2/ngx-sweetalert2";
+import {NgxEchartsModule} from "ngx-echarts";
 
 
 
@@ -84,7 +86,11 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
     NgScrollbarModule,
     NgOptimizedImage,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SweetAlert2Module.forRoot(),
+    NgxEchartsModule.forRoot({
+    echarts: () => import('echarts'), // or import('./path-to-my-custom-echarts')
+    }),
   ],
   //schemas: [ CUSTOM_ELEMENTS_SCHEMA ], // Add this line
   providers: [provideHttpClient()],
