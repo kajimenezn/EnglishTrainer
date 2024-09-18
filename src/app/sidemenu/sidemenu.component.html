@@ -6,10 +6,10 @@
             <span class="navbar-toggler-icon"> </span>
 
         </button>
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-       <img style="height: 50px" src="./assets/Imagen1.png" >
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <img style="height: 50px" src="./assets/Tituloblanco.png" style="width: 15%; margin-right: 10px;">
+       <!--<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
+       <img class="imagenLogo" src="./assets/Imagen1.png" >
+<!--        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
+        <img class="imageEnglish" src="./assets/Tituloblanco.png">
 
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -23,7 +23,8 @@
             <form class="d-flex" role="search">
                 <input class="form-control me-2" id="inpBusqueda" name="inpBusqueda" [(ngModel)]="textoBusqueda" placeholder="Search" aria-label="Search"
                 (keyup.enter)="cargarBusqueda()">
-                <button class="btn btn-outline-success" type="button" >Search</button>
+                <button style="margin-right: 10px" class="btn btn-outline-success" type="button" (click)="cargarBusqueda()" >Search</button>
+
 
             </form>
 
@@ -65,12 +66,7 @@
 
         <ng-scrollbar>
             <div class="flex-shrink-0 p-3 ">
-                <!-- <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                  <svg class="bi me-2" width="30" height="24">
-                    <use xlink:href="#bootstrap" />
-                  </svg>
-                  <span class="fs-5 fw-semibold">Collapsible</span>
-                </a> -->
+
                 <ul class="list-unstyled ps-0">
                     <li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
@@ -102,42 +98,6 @@
                         </div>
                     </li>
 
-                    <!--<li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#orders-collapse" aria-expanded="true">
-                            Courses
-                        </button>
-
-
-                        <div class="collapse" id="orders-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a [routerLink]="['/tr/level1']" class="link-dark rounded">Level 1</a></li>
-                                <li><a [routerLink]="['/tr/level2']" class="link-dark rounded">Level 2</a></li>
-                                <li><a [routerLink]="['/tr/level3']" class="link-dark rounded">Level 3</a></li>
-                                <li><a [routerLink]="['/tr/level4']" class="link-dark rounded">Level 4</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="border-top my-3"></li>
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#account-collapse" aria-expanded="false">
-                            Information
-                        </button>
-                        <div class="collapse" id="account-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a [routerLink]="['/tr/contactus']" class="link-dark rounded">Contact us</a></li>
-                                <li><a [routerLink]="['/tr/followus']" class="link-dark rounded">Follow us</a></li>
-
-                                <li><a href="#" class="link-dark rounded">News</a></li>
-
-                            </ul>
-                        </div>
-                    </li>-->
-
-
-
 
                     <li class="mb-1"   *ngIf="loginService.isLoged()">
                         <!-- Botón para Courses -->
@@ -147,16 +107,15 @@
                         </button>
 
                         <!-- Contenido desplegable de Courses -->
-                        <div class="collapse" id="courses-collapse">
+                        <div class="collapse show" id="courses-collapse">
                             <div class="card card-body">
-                                <!-- Botón para Level 1 dentro de Courses con sangría -->
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#level1-collapse" aria-expanded="false">
-                                    Level 1
-                                </button>
-
                                 <!-- Contenido desplegable de Level 1 -->
-                                <ng-container *ngIf="usuario.level=='1'">
+                                <ng-container *ngIf="usuario.level>='1'">
+                                    <!-- Botón para Level 1 dentro de Courses con sangría -->
+                                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#level1-collapse" aria-expanded="false">
+                                        Level 1
+                                    </button>
                                   <div class="collapse" id="level1-collapse">
                                     <!--<div class="card card-body">-->
                                         <!-- Aquí va el contenido específico de Level 1 -->
@@ -170,14 +129,15 @@
 <!--                                    </div>-->
                                   </div>
                                 </ng-container>
-                                <!-- Botón para Level 2 dentro de Courses -->
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#level2-collapse" aria-expanded="false">
-                                    Level 2
-                                </button>
+
 
                                 <!-- Contenido desplegable de Level 2 -->
-                                <ng-container *ngIf="usuario.level=='2'">
+                                <ng-container *ngIf="usuario.level>='2'">
+                                    <!-- Botón para Level 2 dentro de Courses -->
+                                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#level2-collapse" aria-expanded="false">
+                                        Level 2
+                                    </button>
                                 <div class="collapse" id="level2-collapse">
                                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                             <li><a [routerLink]="['/courses/l2presentsimple']" class="link-dark rounded">Present Simple Tense</a></li>
@@ -186,14 +146,15 @@
                                         </ul>
                                 </div>
                                 </ng-container>
-                                <!-- Botón para Level 3 dentro de Courses -->
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#level3-collapse" aria-expanded="false">
-                                    Level 3
-                                </button>
+
 
                                 <!-- Contenido desplegable de Level 3 -->
-                                <ng-container *ngIf="usuario.level=='3'">
+                                <ng-container *ngIf="usuario.level>='3'">
+                                    <!-- Botón para Level 3 dentro de Courses -->
+                                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#level3-collapse" aria-expanded="false">
+                                        Level 3
+                                    </button>
                                   <div class="collapse" id="level3-collapse">
 
                                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -204,14 +165,16 @@
                                   </div>
                                 </ng-container>
 
-                                <!-- Botón para Level 4 dentro de Courses -->
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#level4-collapse" aria-expanded="false">
-                                    Level 4
-                                </button>
+
+
 
                                 <!-- Contenido desplegable de Level 4 -->
-                                <ng-container *ngIf="usuario.level=='4'">
+                                <ng-container *ngIf="usuario.level>='4'">
+                                    <!-- Botón para Level 4 dentro de Courses -->
+                                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#level4-collapse" aria-expanded="false">
+                                        Level 4
+                                    </button>
                                   <div class="collapse" id="level4-collapse">
 
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -245,7 +208,7 @@
     </div>
 
 
-    <div style="position: fixed; top:65px; left:200px; right: 0px;  bottom: 0px; padding: 1rem; overflow: hidden; transition: all 0.3s ease; "
+    <div style="position: fixed; top:65px; left:200px; right: 0px;  bottom: 0px; padding: 1rem; overflow: hidden; transition: all 0.3s ease; z-index:-1 "
          [style.left]="isSideMenuOpen ? '200px': '0px'">
 
         <ng-scrollbar>
@@ -255,8 +218,5 @@
         </router-outlet>
         </ng-scrollbar>
     </div>
-
-
-
 
 </div>

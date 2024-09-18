@@ -59,46 +59,64 @@ import Swal from "sweetalert2";
 export class FormulariotestComponent {
     listapreguntas: Pregunta[] = [
         {
-            descripcion: "How many skills do the English language have?",
+            descripcion: "Jack and Matt________________the house",
             detalle: '',
-            opcionesRespuesta: [{ descripcion: '1' }, { descripcion: '2' }, { descripcion: '3' }],
-            respuestaCorrecta: '2'
+            opcionesRespuesta: [{ descripcion: 'is cleaning' }, { descripcion: 'are clean' }, { descripcion: 'are cleaning' }],
+            respuestaCorrecta: 'are cleaning'
         },
         {
-            descripcion: "Why is important the English language?",
+            descripcion: "Sara__________English.",
             detalle: '',
-            opcionesRespuesta: [{ descripcion: 'to get a new job' }, { descripcion: 'to change the position' }, { descripcion: 'to travel' }],
-            respuestaCorrecta: 'to get a new job'
+            opcionesRespuesta: [{ descripcion: 'like' }, { descripcion: 'likes' }, { descripcion: 'liking' }],
+            respuestaCorrecta: 'likes'
         },
         {
-            descripcion: "How do you feel when you use the English language?",
+            descripcion: "Layla is___________ her cat to the vet.",
             detalle: '',
-            opcionesRespuesta: [{ descripcion: 'angry' }, { descripcion: 'happy' }, { descripcion: 'comfortable' }],
-            respuestaCorrecta: 'happy'
+            opcionesRespuesta: [{ descripcion: 'takes' }, { descripcion: 'taking' }, { descripcion: 'took' }],
+            respuestaCorrecta: 'taking'
         },
         {
-            descripcion: "How often do you watch videos or movies in English?",
+            descripcion: "We are__________ tennis.",
             detalle: '',
-            opcionesRespuesta: [{ descripcion: 'Never' }, { descripcion: 'Always' }, { descripcion: 'Sometimes' }],
-            respuestaCorrecta: 'Sometimes'
+            opcionesRespuesta: [{ descripcion: 'learning' }, { descripcion: 'learn' }, { descripcion: 'learned' }],
+            respuestaCorrecta: 'learning'
         },
         {
-            descripcion: "What are some tools usually used to improve your English skills?",
+            descripcion: "My friends are_________ human beings.",
             detalle: '',
-            opcionesRespuesta: [{ descripcion: 'apps' }, { descripcion: 'music' }, { descripcion: 'websites' }],
-            respuestaCorrecta: 'apps'
+            opcionesRespuesta: [{ descripcion: 'god' }, { descripcion: 'good' }, { descripcion: 'best' }],
+            respuestaCorrecta: 'good'
         },
         {
-            descripcion: "How long have you been studying English?",
+            descripcion: "Jack has__________in Colombia.",
             detalle: '',
-            opcionesRespuesta: [{ descripcion: '3 years' }, { descripcion: '5 years' }, { descripcion: 'more than 6' }],
-            respuestaCorrecta: 'more than 6'
+            opcionesRespuesta: [{ descripcion: 'been' }, { descripcion: 'gone' }, { descripcion: 'going' }],
+            respuestaCorrecta: 'been'
         },
         {
-            descripcion: "What is another resource to learn English?",
+            descripcion: "Yesterday, I _________at the park.",
             detalle: '',
-            opcionesRespuesta: [{ descripcion: 'Eating' }, { descripcion: 'Listening podcasts' }, { descripcion: 'Studying only grammar' }],
-            respuestaCorrecta: 'Listening podcasts'
+            opcionesRespuesta: [{ descripcion: 'am' }, { descripcion: 'was' }, { descripcion: 'are' }],
+            respuestaCorrecta: 'was'
+        },
+        {
+            descripcion: "__________you like the movie you watched last Friday?",
+            detalle: '',
+            opcionesRespuesta: [{ descripcion: 'Do' }, { descripcion: 'Are' }, { descripcion: 'Did' }],
+            respuestaCorrecta: 'Did'
+        },
+        {
+            descripcion: "Patrick ________Maths for the exam.",
+            detalle: '',
+            opcionesRespuesta: [{ descripcion: 'will studies' }, { descripcion: 'will study' }, { descripcion: 'will studying' }],
+            respuestaCorrecta: 'will study'
+        },
+        {
+            descripcion: "______you help me?",
+            detalle: '',
+            opcionesRespuesta: [{ descripcion: 'Might' }, { descripcion: 'Are' }, { descripcion: 'Will' }],
+            respuestaCorrecta: 'Will'
         }
     ];
 

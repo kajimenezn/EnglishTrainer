@@ -32,7 +32,7 @@ button:hover {
 
 .highlight-green {
     background-color: lightgreen;
-    color: black; /* Puedes ajustar el color del texto si es necesario */
+    color: black; /* Color del texto*/
 }
 
 .chart-container {
